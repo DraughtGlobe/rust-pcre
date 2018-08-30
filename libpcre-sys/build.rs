@@ -136,5 +136,5 @@ fn main() {
         println!("cargo:rustc-link-search=native={}", pcre_pathbuf.as_path().display());
     }
 
-    println!("cargo:rustc-link-lib=static=pcre");
+    println!("cargo:rustc-link-lib=dylib=pcre");
 }
